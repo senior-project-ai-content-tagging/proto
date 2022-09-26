@@ -1,0 +1,7 @@
+version: v1
+plugins:
+  - name: grpc-web
+    out: gen/proto/grpc-web
+    opt: import_style=typescript,mode=grpcweb
+  - name: js
+    out: gen/proto/js

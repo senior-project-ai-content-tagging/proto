@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package backend_service.v1;
+
+service ChatService {
+  rpc ChatInitiate(ChatInitiateRequest) returns (ChatInitiateResponse);
+}
+
+message ChatInitiateRequest {
+  string name = 1;
+  string avatar_url = 2;
+}
+
+message ChatInitiateResponse {
+  int64 id = 1;
+}
